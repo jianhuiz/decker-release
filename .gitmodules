@@ -1,3 +1,3 @@
 [submodule "src/decker"]
 	path = src/decker
-	url = https://github.com/hatofmonkeys/decker.git
+	url = https://github.com/jianhuiz/decker.git
