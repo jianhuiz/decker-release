@@ -2,7 +2,7 @@ var express = require('express');
 
 // Constants
 var DEFAULT_PORT = 80;
-var PORT = process.env.PORT || DEFAULT_PORT;
+var PORT = process.env.VCAP_APP_PORT || process.env.PORT || DEFAULT_PORT;
 
 // App
 var app = express();

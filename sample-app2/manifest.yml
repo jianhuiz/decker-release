@@ -1,5 +1,6 @@
 applications:
 - name: docker-node-hello
+  command: node index.js
   instances: 1
   memory: 256M
   domain: 54.179.151.10.xip.io
