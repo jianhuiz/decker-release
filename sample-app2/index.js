@@ -6,8 +6,12 @@ var PORT = process.env.VCAP_APP_PORT || process.env.PORT || DEFAULT_PORT;
 
 // App
 var app = express();
+
+var n = 0;
 app.get('/', function (req, res) {
-  res.send('Hello World\n');
+  n++;
+  console.log('Hello world. ' + n);
+  res.send('Hello world. ' + n + '\n');
 });
 
 app.listen(PORT)
